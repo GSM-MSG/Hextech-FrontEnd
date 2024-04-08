@@ -1,12 +1,13 @@
-import { Route, Routes } from 'react-router-dom'
-import { SignInPage } from './pages'
+import { Route, Routes } from "react-router-dom";
+import { MainPage, SignInPage } from "./pages";
 
 function App() {
   return (
     <Routes>
-      <Route path='/signin' element={<SignInPage />} />
+      <Route path="/" element={<SignInPage />} />
+      <Route path="/main" element={<MainPage />} />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;
